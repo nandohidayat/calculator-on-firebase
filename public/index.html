@@ -29,7 +29,7 @@
             width: 100%;
         }
 
-        .logo {
+        #logo {
             width: 28px;
             margin: 1px 1px 1px 1px;
         }
@@ -37,6 +37,14 @@
         .sidebar {
             background: lightyellow;
             grid-row: 2/5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #photo {
+            width: 200px;
         }
 
         .konten {
@@ -77,10 +85,10 @@
     <div class="container">
         <div class="menu">
             <div class="imgContainer">
-                <a href="https://nando-calc.firebaseapp.com"><img class="logo" src="./images/Logo.png" alt="Menu"></a>
+                <a href="https://nando-calc.firebaseapp.com"><img id="logo" src="./images/Logo.png" alt="Menu"></a>
             </div>
         </div>
-        <div class="sidebar"></div>
+        <div class="sidebar"><img id="photo" src="./images/09986.jpg" alt=""></div>
         <div class="konten">Menjumlahkan Dua Angka</div>
         <div class="konten">Lokasi Istimewa Dengan Mapbox</div>
         <div class="konten"></div>
