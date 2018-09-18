@@ -1,7 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Web Specialist</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 30px 100px 100px 100px 30px;
+            grid-gap: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .menu {
+            background: lightblue;
+            grid-column: 1/5;
+        }
 
+        .imgContainer {
+            text-align: center;
+            width: 0;
+            transition: all 0.8s ease;
+        }
+        
+        .menu:hover > .imgContainer {
+            width: 100%;
+        }
+
+        .logo {
+            width: 28px;
+            margin: 1px 1px 1px 1px;
+        }
+        
+        .sidebar {
+            background: lightyellow;
+            grid-row: 2/5;
+        }
+
+        .konten {
+            background: pink;
+            grid-column: 2/5;
+            cursor: pointer;
+            position: relative;
+            top: 0;
+            box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            transform: translateZ(0);
+            transition: all 0.2s ease;
+        }
+        
+        .konten:active {
+            z-index: 100;
+            background: rgb(245, 173, 185);
+            top: 5px;
+            transform: translateX(50deg);
+            box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+        }
+
+        .footer {
+            background: lime;
+            grid-column: 1/5;
+            padding: 3px 3px;
+        }
+    </style>
+</head>
 <body>
-    Situs pribadi saya di Firebase
+    <div class="container">
+        <div class="menu">
+            <div class="imgContainer">
+                <a href="https://nando-calc.firebaseapp.com"><img class="logo" src="./images/Logo.png" alt="Menu"></a>
+            </div>
+        </div>
+        <div class="sidebar"></div>
+        <div class="konten"></div>
+        <div class="konten"></div>
+        <div class="konten"></div>
+        <div class="footer">Muhammad Nando Hidayat</div>
+    </div>
 </body>
-
 </html>
