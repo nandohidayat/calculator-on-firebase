@@ -50,6 +50,14 @@
             transition: all 0.2s ease;
         }
         
+        /* centering konten */
+        .konten { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         .konten:active {
             z-index: 100;
             background: rgb(245, 173, 185);
@@ -73,10 +81,17 @@
             </div>
         </div>
         <div class="sidebar"></div>
-        <div class="konten"></div>
-        <div class="konten"></div>
+        <div class="konten">Menjumlahkan Dua Angka</div>
+        <div class="konten">Lokasi Istimewa Dengan Mapbox</div>
         <div class="konten"></div>
         <div class="footer">Muhammad Nando Hidayat</div>
     </div>
+
+    <script>
+        const konten = Array.from(document.querySelectorAll('.konten'));
+        konten[0].addEventListener('click', () => {
+            window.location.href = './project1';
+        });
+    </script>
 </body>
 </html>
