@@ -12,7 +12,7 @@
         crossorigin=""></script>
     <style>
         #mapid {
-            height: 180px;
+            height: 100vh;
         }
     </style>
 </head>
@@ -39,11 +39,11 @@
             radius: 500
         }).addTo(mymap);
         
-        marker.bindPopup("<b>Resto top disini/b><br>yes!").openPopup();
+        marker.bindPopup("<b>Taman Lele</b> : Tempat wisata paling asik").openPopup();
 
         var popup = L.popup()
             .setLatLng([-6.986413, 110.345936])
-            .setContent("Restoran terbaik disini.")
+            .setContent("Tempat wisata terbaik disini")
             .openOn(mymap);
 
         function onMapClick(e) {
